@@ -18,11 +18,11 @@
 
 document.addEventListener("DOMContentLoaded", function(){
 		Typed.new(".element", {
-			strings: ["Hello there,","I'm Emmanuel Ndukwe,<br>Am a Creative Front-End Web Developer and a Java Programmer, I Care About Your Story.<br>Scroll Down To See My Portfolio.<br>"],
+			strings: ["Hello there,","I'm Emmanuel Ndukwe,<br>Am a Creative Front-End Web Developer and a Project Manager, I Care About Your Story.<br>Scroll Down To See My Portfolio.<br>"],
             startDelay: 5000,
             contentType: 'html',
             typeSpeed: 30,
-            backDelay: 4000,
+            backDelay: 2000,
             cursorChar: "_",
 		});
 	});

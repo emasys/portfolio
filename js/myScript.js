@@ -9,7 +9,7 @@ $('document').ready(function(){
     
     $('#contact').affix({
       offset: {
-          top: 1250
+          top: 1500
 //        top: $('#header').height()
       }
 });	
