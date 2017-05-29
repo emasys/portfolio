@@ -7,10 +7,10 @@ $(document).ready(function() {
 	//this will calculate header's full height, with borders, margins, paddings
 	       var scrollVal = $(this).scrollTop();
 	       console.log(scrollVal);
-	        if ( scrollVal > container - 45 ) {
-	            $('#portfolio').css({'position':'fixed','top' :'51px', 'z-index':'950','text-align': 'center','margin-bottom':'60px'});
+	        if ( scrollVal > container - 50 ) {
+	            $('#portfolio').css({'position':'fixed','top' :'51px', 'z-index':'980','text-align': 'center','margin-bottom':'60px'});
 	        } else {
-	            $('#portfolio').css({'position':'static','top':'0px','text-align': 'left','margin-bottom':'20px'});
+	            $('#portfolio').css({'position':'static','top':'0px','text-align': 'left','margin-bottom':'20px', 'z-index':'800'});
 	        }
 			
 			
