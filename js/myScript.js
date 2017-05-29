@@ -1,4 +1,46 @@
-$('document').ready(function(){
+
+$(document).ready(function() {
+	   $(window).scroll(function() {
+	       
+	       var container = $('#header-banner').outerHeight(true);
+	       console.log(container);
+	//this will calculate header's full height, with borders, margins, paddings
+	       var scrollVal = $(this).scrollTop();
+	       console.log(scrollVal);
+	        if ( scrollVal > container - 45 ) {
+	            $('#portfolio').css({'position':'fixed','top' :'51px', 'z-index':'950','text-align': 'center','margin-bottom':'60px'});
+	        } else {
+	            $('#portfolio').css({'position':'static','top':'0px','text-align': 'left','margin-bottom':'20px'});
+	        }
+			
+			
+			/*var portfolio_container = $('.portHeight').outerHeight(true);
+	       console.log(portfolio_container);*/
+	//this will calculate header's full height, with borders, margins, paddings
+	       var contact = $('.portHeight').outerHeight(true);
+	       console.log("contact: ",contact);
+	//this will calculate header's full height, with borders, margins, paddings
+	       var scrollVal = $(this).scrollTop();
+	       console.log("scroll: ", scrollVal);
+	        if ( scrollVal > contact + 390 ) {
+	            $('#contact').css({'position':'fixed','top' :'51px', 'z-index':'2000','text-align': 'center','margin-bottom':'60px'});
+	        } else {
+	            $('#contact').css({'position':'static','top':'0px','text-align': 'left','margin-bottom':'0','z-index':'1011'});
+	        }
+
+	        
+
+	       
+    });
+ });
+
+
+
+
+
+
+
+/*$('document').ready(function(){
     
     $('#portfolio').affix({
       offset: {
@@ -46,3 +88,4 @@ $('#sidebar').affix({
 ////            startDelay: 10000,
 //		});
 //	});
+*/
