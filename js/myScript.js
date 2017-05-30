@@ -14,8 +14,7 @@ $(document).ready(function() {
 	        }
 			
 			
-			/*var portfolio_container = $('.portHeight').outerHeight(true);
-	       console.log(portfolio_container);*/
+			
 	//this will calculate header's full height, with borders, margins, paddings
 	       var contact = $('.portHeight').outerHeight(true);
 	       console.log("contact: ",contact);
